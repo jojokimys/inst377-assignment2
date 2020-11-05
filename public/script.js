@@ -25,7 +25,6 @@ function displayMatches(){
                 <span class="name">${cat.name}</span><br>
                 <span class='category'>${cat.category}</span><br>
                 <span class='location'>${cat.city}</span>
-
             </li>
         `;
     }).join(''); 
