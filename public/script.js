@@ -22,9 +22,9 @@ function displayMatches(){
     const html = matchArray.map(cat => {
         return `
             <li>
-                <span class="name">${cat.name}</span><br>
-                <span class='category'>${cat.category}</span><br>
-                <span class='location'>${cat.city}</span>
+                <h2 class="name">${cat.name}</h2>
+                <p class='category'>${cat.category}</p>
+                <p class='location'>${cat.city}</p>
             </li>
         `;
     }).join(''); 
