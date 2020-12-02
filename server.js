@@ -12,7 +12,7 @@ const port = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static('./'));
+app.use(express.static('public'));
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
@@ -21,11 +21,8 @@ app.use((req, res, next) => {
 });
 
 app.route('/api')
-  .get(async (req, res) => {
+  .get((req, res) => {
     console.log('GET request detected');
-    const data = await fetch('https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json');
-    const json = await data.json();
-    return res.json(json);
   })
   .post(async (req, res) => {
     console.log('POST request detected');

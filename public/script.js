@@ -1,10 +1,7 @@
-
-
-const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json'
 const suggestions = [];
 
 fetch('/api', {
-    method: 'GET',
+    method: 'POST',
     headers: {
         'Content-Type': 'application/json'
     }, })
