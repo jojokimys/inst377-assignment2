@@ -3,10 +3,13 @@
 const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json'
 const suggestions = [];
 
-fetch(endpoint)
+fetch('/api', {
+    method: 'GET',
+    headers: {
+        'Content-Type': 'application/json'
+    }, })
     .then(data => data.json())
     .then(data => suggestions.push(...data))
-
     console.log(suggestions)
 
 function findMatches(wordsTomatch, restaurants) {
