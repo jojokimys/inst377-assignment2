@@ -2,7 +2,7 @@
   "name": "inst377-fa2020",
   "version": "1.0.0",
   "description": "Repository for INST377 Dynamic Web Applications Fall 2020 at UMD",
-  "main": "index.html",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "node --experimental-modules lab_utils/html_validation_error_gen.js",
